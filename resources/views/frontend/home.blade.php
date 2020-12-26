@@ -7,7 +7,7 @@
                 <span itemprop="name">Web Hosting</span>!
             </h1>
             <p>Experience the next level web hosting which built for speed! We utilize solid-state drives(SSD) for our all hosting plans. For Enhanced performance we use LiteSpeed Web Server, HTTP/2, PHP7. We make your website faster, which will help you to increase search ranking! </p>
-            <a href="https://clients.exonhost.com/cart.php" class="silverbutton">SIGN UP</a><a href="web-hosting.html" class="bluebutton transparent">VIEW PLANS</a>
+            <a href="https://clients.exonhost.com/cart.php" class="silverbutton">SIGN UP</a><a href="{{url('web-hosting')}}" class="bluebutton transparent">VIEW PLANS</a>
         </div>
     </div>
     <!--end banner -->
@@ -22,7 +22,7 @@
             <div class="row">LIteSpeed Web Server Powered</div>
             <div class="row">Pure SSD RAID-10</div>
             <div class="row specialoffer-mob"><b>FREE .XYZ</b> Domain<br> <b>FREE</b>  Website Transfer <br> <b>FREE</b>  One Click Installer <br> <span>Free-XYZ</span></div>
-            <div class="row price"><span class="from">From</span><i>$</i><b>2.99</b><span>/mo</span><a href="web-hosting.html" class="bluebutton">View Plans</a></div>
+            <div class="row price"><span class="from">From</span><i>$</i><b>2.99</b><span>/mo</span><a href="{{url('web-hosting')}}" class="bluebutton">View Plans</a></div>
         </li>
         <li class="plantwo">
             <div class="plantitle">Virtual Servers  <span>Get started with a VPS or enjoy the flexibility of our SSD VPS solutions.</span></div>
@@ -31,7 +31,7 @@
             <div class="row">Full Root Access Available</div>
             <div class="row">Fully Managed 24/7/365 Support</div>
             <div class="row">Pure SSD RAID-10</div>
-            <div class="row price"><span class="from">From</span><i>$</i><b>23.95</b><span>/mo</span><a href="ssd-vps.html" class="bluebutton">View Plans</a></div>
+            <div class="row price"><span class="from">From</span><i>$</i><b>23.95</b><span>/mo</span><a href="{{url('ssd-vps')}}" class="bluebutton">View Plans</a></div>
         </li>
         <li class="planthree">
             <div class="plantitle">
@@ -44,7 +44,7 @@
             <div class="row">Full Root Access Available</div>
             <div class="row">Fully Managed 24/7/365 Support</div>
             <div class="row">Multiple Locations</div>
-            <div class="row price"><span class="from">From</span><i>$</i><b>169</b><span>/mo</span><a href="dedicated-server.html" class="bluebutton">Configure</a></div>
+            <div class="row price"><span class="from">From</span><i>$</i><b>169</b><span>/mo</span><a href="{{url('dedicated-server')}}" class="bluebutton">Configure</a></div>
         </li>
     </ul>
     <div class="specialoffer"><b>Free .XYZ</b> Domain<span>&nbsp; + &nbsp;</span> <b>Free</b> Site Transfer <span>&nbsp; + &nbsp;</span> <b>Free</b> One Click Installer <span>&nbsp; + &nbsp;</span> <b>Free</b> Server Setup.     &nbsp; Coupon: <b>Free-XYZ</b></div>

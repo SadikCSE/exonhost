@@ -17,9 +17,13 @@ Route::get('/', function () {
     return view('frontend.home');
 });
 
-/*Route::get('/sadi', function () {
-    return view('sadi');
-});*/
+Route::get('web-hosting',[\App\Http\Controllers\WebHostingController::class, 'webInfo']);
+Route::get('reseller-hosting',[\App\Http\Controllers\ResellerHostingController ::class, 'resellerInfo']);
+Route::get('ssd-vps',[\App\Http\Controllers\SsdVpsController ::class, 'ssdInfo']);
+Route::get('dedicated-server',[\App\Http\Controllers\DedicatedServerController ::class, 'dedicatedInfo']);
+Route::get('about',[\App\Http\Controllers\AboutController ::class, 'aboutInfo']);
+Route::get('contact',[\App\Http\Controllers\ContactController ::class, 'contactInfo']);
+
 
 
 

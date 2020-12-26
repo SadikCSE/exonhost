@@ -1,68 +1,69 @@
-
-
 <!DOCTYPE html>
 <html>
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <meta property="og:image" content="http://www.exonhost.com/{{asset('frontend/images')}}/fbg.png" />
+    <meta property="og:image" content="http://www.exonhost.com/{{asset('frontend/images')}}/fbg.png"/>
     <title>@yield('title')</title>
-    <link href="{{asset('Frontend/css')}}/stylesheet.css" rel="stylesheet" type="text/css" />
-    <link href="{{asset('Frontend/css')}}/mobile.css" rel="stylesheet" type="text/css" />
-    <link rel="icon" type="image/png"  href="{{asset('frontend/images')}}/favicon.png">
+    <link href="{{asset('Frontend/css')}}/stylesheet.css" rel="stylesheet" type="text/css"/>
+    <link href="{{asset('Frontend/css')}}/mobile.css" rel="stylesheet" type="text/css"/>
+    <link rel="icon" type="image/png" href="{{asset('frontend/images')}}/favicon.png">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
     <script>
-        $(function() {
+        $(function () {
+            var pull = $('#pull');
+            menu = $('nav ul');
+            menuHeight = menu.height();
 
-            var pull 		= $('#pull');
-
-            menu 		= $('nav ul');
-
-            menuHeight	= menu.height();
-
-
-
-            $(pull).on('click', function(e) {
+            $(pull).on('click', function (e) {
                 e.preventDefault();
                 menu.slideToggle();
 
             });
 
 
-
-            $(window).resize(function(){
+            $(window).resize(function () {
                 var w = $(window).width();
-                if(w > 320 && menu.is(':hidden')) {
-                menu.removeAttr('style');
+                if (w > 320 && menu.is(':hidden')) {
+                    menu.removeAttr('style');
                 }
-
             });
-
         });
 
     </script>
 </head>
 <body>
-    @include('frontend.partials.header')
+@include('frontend.partials.header')
 
 {{--@include('frontend.partials.header')--}}
 <!--banner -->
-    @yield('maincontent')
-        <div class="clear"></div>
-        <!-- end testimonials -->
-        <!-- feautres -->
-    @include('frontend.partials.footer')
+@yield('maincontent')
+<div class="clear"></div>
+<!-- end testimonials -->
+<!-- feautres -->
+@include('frontend.partials.footer')
 <!-- End Global Footer -->
 <!--Start of Help.com Live Chat Script-->
 <script>
-    window.Helpdotcom=window.Helpdotcom||function(a){window.Helpdotcom.q.push(a)},window.Helpdotcom.q=[];var d=document,s=d.createElement("script");s.type="text/javascript",s.async=!0,s.src="//plugins.help.com/livechat.js",s.id="helpdotcom-script",s.setAttribute("data-org-id","ccc8aa75-311e-49c7-88a8-8085df34d870"),s.setAttribute("data-widget-id","8f961332-cdd0-44f1-ae41-cae08e1645f1");var x=d.getElementsByTagName("script")[0];x.parentNode.insertBefore(s,x);
+    window.Helpdotcom = window.Helpdotcom || function (a) {
+        window.Helpdotcom.q.push(a)
+    }, window.Helpdotcom.q = [];
+    var d = document, s = d.createElement("script");
+    s.type = "text/javascript", s.async = !0, s.src = "//plugins.help.com/livechat.js", s.id = "helpdotcom-script", s.setAttribute("data-org-id", "ccc8aa75-311e-49c7-88a8-8085df34d870"), s.setAttribute("data-widget-id", "8f961332-cdd0-44f1-ae41-cae08e1645f1");
+    var x = d.getElementsByTagName("script")[0];
+    x.parentNode.insertBefore(s, x);
 
 </script>
 <!--End of Help.com Live Chat Script-->
 <script>
-    (function (w,i,d,g,e,t,s) {w[d] = w[d]||[];t= i.createElement(g);
-        t.async=1;t.src=e;s=i.getElementsByTagName(g)[0];s.parentNode.insertBefore(t, s);
-    })(window, document, '_gscq','script','//widgets.getsitecontrol.com/67481/script.js');
+    (function (w, i, d, g, e, t, s) {
+        w[d] = w[d] || [];
+        t = i.createElement(g);
+        t.async = 1;
+        t.src = e;
+        s = i.getElementsByTagName(g)[0];
+        s.parentNode.insertBefore(t, s);
+    })(window, document, '_gscq', 'script', '//widgets.getsitecontrol.com/67481/script.js');
 </script>
 </body>
 </html>
